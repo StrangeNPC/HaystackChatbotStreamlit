@@ -25,7 +25,13 @@ with st.sidebar:
     💡
     ''')
     add_vertical_space(5)
-    st.write('Made with ❤️ by [Data Professor](https://youtube.com/dataprofessor)')
+
+    if st.button('Clear Chat History'):
+        # Clear the chat history lists
+        st.session_state['generated'] = []
+        st.session_state['past'] = []
+
+    st.write('Made with sheer willpower 💥')
 
 # Generate empty lists for generated and past.
 ## generated stores AI generated responses
@@ -84,7 +90,7 @@ def Haystack(prompt):
 # Response output
 ## Function for taking user prompt as input followed by producing AI generated responses
 def generate_response(prompt):
-    Amended_prompt = prompt + " according to PSSCOC only."
+    Amended_prompt = prompt
     response = Haystack(Amended_prompt)
     return response
 
