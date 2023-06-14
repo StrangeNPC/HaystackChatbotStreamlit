@@ -4,9 +4,7 @@
 
 The Haystacks Streamlit Chatbot is a chatbot powered by deep learning. It utilizes the Haystack framework and the Google Flan T5 Large LLM model to provide AI-generated responses to user prompts. The app is designed to be user-friendly and easy to use.
 
-
-
-
+![unnamed](https://github.com/StrangeNPC/HaystackChatbotStreamlit/assets/95240891/74f52b0e-8d9c-43ad-99c3-ed56090d86b5)
 
 
 
